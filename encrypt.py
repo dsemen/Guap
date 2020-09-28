@@ -84,10 +84,10 @@ labe2 = tk.Label(f, text="Результат:" )
 txt1 = tk.Text(f, width=40, height=30, borderwidth=2)
 txt2 = tk.Text(f, width=40, height=30, borderwidth=2)
 
-encryptb = tk.Button(f, text="Зашифровать")
-decryptb = tk.Button(f, text="Расшифровать")
-insertTextb = tk.Button(f, text="Загрузить текст")
-saveTextb = tk.Button(f, text="Сохранить текст")
+encryptb = tk.Button(f, text="Зашифровать", command=ins_encrypted)
+decryptb = tk.Button(f, text="Расшифровать", command=ins_decrypted)
+insertTextb = tk.Button(f, text="Загрузить текст", command=insertText)
+saveTextb = tk.Button(f, text="Сохранить текст", command=saveText)
 
 # Place objects
 labe1.grid(column=2, row=0)
